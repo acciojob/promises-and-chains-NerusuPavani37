@@ -16,7 +16,7 @@ function handleSumbit(){
   let name = document.getElementById("name").value;
   let age =parseInt(document.getElementById("age").value);
   if(!name || isNaN(age)){
-    alert("Please enter valid details.");
+    alert("Please enter valid details");
   }else{
     promiseFn(name,age)
     .then((mess) =>{
